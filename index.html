@@ -23,7 +23,7 @@
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Header -->
-    <header class="bg-blue-900 p-4 flex justify-between items-center">
+    <header class="bg-black-900 p-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">GROUP 14</h1>
       <nav class="space-x-4">
         <a class="nav-link" href="index.html" id="home-link">Home</a>
@@ -36,7 +36,7 @@
         <a class="nav-link" href="contact.html" id="contact-link">Contact</a>
       </nav>
 
-      <button class="bg-blue-600 text-white px-4 py-2 rounded">
+      <button class="bg-red-600 text-white px-4 py-2 rounded">
         Go to project
       </button>
     </header>
@@ -121,7 +121,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-blue-900 py-8">
+    <footer class="bg-black-900 py-8">
       <div class="container mx-auto flex justify-between">
         <div>
           <h3 class="text-xl font-bold mb-4">GROUP 14</h3>
@@ -156,24 +156,5 @@
         <p class="text-gray-200">© 2024 Group 14. All rights reserved.</p>
       </div>
     </footer>
-
-    <script>
-      // JavaScript to handle the active link
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll(".nav-link");
-        const currentPath = window.location.pathname.split("/").pop();
-
-        links.forEach((link) => {
-          if (link.getAttribute("href") === currentPath) {
-            link.classList.add("active");
-          }
-
-          link.addEventListener("click", function () {
-            links.forEach((l) => l.classList.remove("active"));
-            this.classList.add("active");
-          });
-        });
-      });
-    </script>
   </body>
 </html>
