@@ -11,7 +11,9 @@
     />
   </head>
   <body class="bg-gray-900 text-gray-200">
-    <header class="bg-blue-900 p-4 flex justify-between items-center shadow-lg">
+    <header
+      class="bg-black-900 p-4 flex justify-between items-center shadow-lg"
+    >
       <h1 class="text-2xl font-extrabold text-white">GROUP 14</h1>
       <nav class="space-x-4">
         <a href="index.html" class="hover:underline hover:text-blue-400"
@@ -31,7 +33,7 @@
           >Contact</a
         >
       </nav>
-      <button class="bg-blue-600 text-white px-4 py-2 rounded">
+      <button class="bg-red-600 text-white px-4 py-2 rounded">
         Go to project
       </button>
     </header>
@@ -94,7 +96,7 @@
       </div>
     </main>
 
-    <footer class="bg-gray-800 p-8 mt-10">
+    <footer class="bg-gray-700 p-8 mt-10">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full md:w-1/3 px-4 mb-8 md:mb-0">
           <h3 class="text-xl font-bold mb-4">GROUP 14</h3>
@@ -149,28 +151,35 @@
         <p class="text-gray-200">© 2024 Group 14. All rights reserved.</p>
       </div>
     </footer>
-    <button id="backToTop" class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden">
-      &#8679; <!-- Mũi tên lên -->
-  </button>
+    <button
+      id="backToTop"
+      class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden"
+    >
+      &#8679;
+      <!-- Mũi tên lên -->
+    </button>
     <script>
-      const backToTopButton = document.getElementById('backToTop');
+      const backToTopButton = document.getElementById("backToTop");
 
-// Hiện nút khi cuộn xuống 300px
-window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTopButton.classList.remove('hidden');
-    } else {
-        backToTopButton.classList.add('hidden');
-    }
-};
+      // Hiện nút khi cuộn xuống 300px
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          backToTopButton.classList.remove("hidden");
+        } else {
+          backToTopButton.classList.add("hidden");
+        }
+      };
 
-// Khi nút được nhấp, cuộn lên đầu trang
-backToTopButton.onclick = function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Cuộn mượt mà
-    });
-};
+      // Khi nút được nhấp, cuộn lên đầu trang
+      backToTopButton.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Cuộn mượt mà
+        });
+      };
     </script>
   </body>
 </html>
