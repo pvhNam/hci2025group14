@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project - Group 14</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Header -->
-    <header class="bg-black-900 p-4 flex justify-between items-center shadow-md">
+    <header
+      class="bg-black-900 p-4 flex justify-between items-center shadow-md"
+    >
       <h1 class="text-2xl font-bold">GROUP 14</h1>
       <nav class="space-x-4">
         <a class="hover:underline text-white" href="index.html">Home</a>
@@ -197,7 +201,7 @@
             <li>Phạm Văn Hoài Nam</li>
             <li>Nguyễn Quang Thành</li>
             <li>Trần Xuân Hùng</li>
-            <li>Nguyễ Doãn Thu Phương</li>
+            <li>Nguyễn Doãn Thu Phương</li>
             <li>Ngô Quang Khánh</li>
           </ul>
         </div>
@@ -206,28 +210,35 @@
         <p class="text-gray-200">© 2024 Group 14. All rights reserved.</p>
       </div>
     </footer>
-    <button id="backToTop" class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden">
-      &#8679; <!-- Mũi tên lên -->
-  </button>
+    <button
+      id="backToTop"
+      class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden"
+    >
+      &#8679;
+      <!-- Mũi tên lên -->
+    </button>
     <script>
-      const backToTopButton = document.getElementById('backToTop');
+      const backToTopButton = document.getElementById("backToTop");
 
-// Hiện nút khi cuộn xuống 300px
-window.onscroll = function() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopButton.classList.remove('hidden');
-    } else {
-        backToTopButton.classList.add('hidden');
-    }
-};
+      // Hiện nút khi cuộn xuống 300px
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTopButton.classList.remove("hidden");
+        } else {
+          backToTopButton.classList.add("hidden");
+        }
+      };
 
-// Khi nút được nhấp, cuộn lên đầu trang
-backToTopButton.onclick = function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Cuộn mượt mà
-    });
-};
+      // Khi nút được nhấp, cuộn lên đầu trang
+      backToTopButton.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Cuộn mượt mà
+        });
+      };
     </script>
   </body>
 </html>
