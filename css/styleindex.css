@@ -17,7 +17,10 @@
 	height: 100vh;
 	width: 100%;
 	float: left;
-	background: #f8f8f8;
+	background-image: url('https://i.postimg.cc/nr4m8Qkv/Pngtree-dark-blue-wallpaper-background-1260871.jpg'); /* Replace with your image URL */
+	background-size: cover; /* Makes the image cover the entire container */
+	background-position: center; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 #LoginAndRegistrationForm{
 	width: 350px;
@@ -43,6 +46,7 @@
 	display: flex;
 	justify-content: center;
 	padding: 20px 0px;
+    
 }
 #formSwitchBtn button{
 	font-size: 17px;
@@ -55,12 +59,12 @@
 	cursor: pointer;
 	position: relative;
 	background: transparent;
-	border: 1px solid #747474;
+	border: 1px solid #0056b3;
 	transition: 0.4s;
 }
 #formSwitchBtn .active{
 	color: #fff;
-	background: #747474;
+	background: #0056b3;
 }
 .input-text{
 	width: 100%;
@@ -86,12 +90,12 @@
 }
 
 .forgot-pass-remember-me #ForgotPassword{
-	color: #002b27;
+	color: #0056b3;
 	font-weight: bold;
 	transition: 0.4s;
 }
 .forgot-pass-remember-me #ForgotPassword:hover{
-	color: #008d7f;
+	color: #e60023;
 }
 
 .forgot-pass-remember-me input{
@@ -116,11 +120,11 @@
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: bolder;
 	transition: 0.4s;
-	background-color: #747474;
+	background-color: #0056b3;
 	color: #fff;
 }
 .Submit-Btn:hover{
-	background-color: #444444;
+	background-color: #0062cc;
 	color: #fff;
 	
 }
@@ -136,13 +140,13 @@
 	font-family: 'Nunito Sans', sans-serif;
 	font-style: italic !important;
 	text-decoration: none;
-	color: #002b27;
+	color: #0056b3;
 	font-weight: bold;
 	transition: 0.4s;
 }
 .dont-have-account a:hover,
 .already-have-account a:hover{
-	color: #008d7f;
+	color: #e60023;
 }
 
 #RegistrationFrom,
