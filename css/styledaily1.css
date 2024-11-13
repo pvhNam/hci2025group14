@@ -1,65 +1,102 @@
-/* Reset margin và padding cho toàn bộ trang */
+/* General Reset and Body Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Cấu hình font và background chung */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Header */
+/* Navigation Bar */
 .header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 .header .logo h1 {
   font-size: 24px;
-  margin: 0;
+  color: #007bff;
 }
 
-.navbar .nav-item {
+.navbar .nav {
+  display: flex;
   list-style: none;
 }
 
-.navbar .nav-link {
-  color: #333;
-  text-decoration: none;
-  padding: 8px 15px;
-  display: inline-block;
-  transition: background-color 0.3s;
+.nav-item {
+  margin-right: 20px;
 }
 
-.navbar .nav-link:hover {
-  background-color: #1cd9f6;
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item a.active,
+.nav-item a:hover {
+  background-color: #007bff;
+  color: white;
   border-radius: 5px;
 }
 
+/* Tabs for Weeks */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /* Add top margin for spacing */
+}
+
+.tab-link {
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 0 5px;
+  background-color: #f1f1f1;
+  color: #007bff;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
 /* Main Content */
-.main {
-  padding-top: 90px; /* Adjust for fixed header */
-  padding-bottom: 60px;
+main {
+  margin-top: 120px;
 }
 
 .container h1 {
+  font-size: 28px;
+  font-weight: 600;
   text-align: center;
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-/* Table Styles */
 .table-container {
-  display: block;
-  margin-top: 20px;
+  display: none;
+  margin-bottom: 40px;
 }
 
 .table-container.active {
@@ -68,53 +105,77 @@ body {
 
 .table {
   width: 100%;
-  border-collapse: collapse;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-.table-light th {
-  background-color: #f1f1f1;
-  font-weight: bold;
+.table thead {
+  background-color: #f8f9fa;
   text-align: center;
 }
 
-.table td,
-.table th {
-  padding: 15px;
-  text-align: center;
-}
-
+.table th,
 .table td {
-  border-top: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
 }
 
-/* Completion Rate (Battery) */
-.completion-rate {
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Battery Completion Rate */
+.battery-cell-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 150px;
+  max-width: 180px;
+  margin: 0 auto;
 }
 
 .battery-cell {
-  width: 18%;
+  width: 18px;
   height: 12px;
   border-radius: 5px;
-  background-color: #ddd;
-  transition: background-color 0.3s ease;
+  background-color: #dcdcdc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .battery-cell.full {
-  background-color: #28a745; /* Green - 100% */
+  background-color: #4caf50;
 }
 
 .battery-cell.half {
-  background-color: #ffc107; /* Yellow - 50% */
+  background-color: #ffeb3b;
 }
 
 .battery-cell.empty {
-  background-color: #dc3545; /* Red - 0% */
+  background-color: #dcdcdc;
+}
+
+.battery-cell:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
