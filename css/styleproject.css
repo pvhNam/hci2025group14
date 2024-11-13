@@ -1,3 +1,4 @@
+/* Định dạng chung */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,9 +6,10 @@ body {
   color: #e0e0e0;
 }
 
+/* Header */
 .header {
-  background-color: #4b4b00;
-  padding: 10px 20px;
+  background-color: #ffffff; /* Đổi màu nền thành trắng */
+  padding: 20px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +17,10 @@ body {
 
 .header .logo h1 {
   margin: 0;
-  color: #e0e0e0;
+  font-size: 28px;
+  color: #333333; /* Đổi màu chữ thành đen */
+  text-decoration: underline; /* Thêm gạch chân */
+  text-decoration-color: #1e90ff; /* Màu xanh nước biển cho gạch chân */
 }
 
 .header nav {
@@ -35,7 +40,7 @@ body {
 }
 
 .header nav ul li a {
-  color: #e0e0e0;
+  color: #000000; /* Đổi màu chữ thành đen */
   text-decoration: none;
 }
 
@@ -51,7 +56,7 @@ body {
   .header nav ul {
     display: none;
     flex-direction: column;
-    background-color: #4b4b00;
+    background-color: #ffffff;
     width: 100%;
     position: absolute;
     top: 60px;
@@ -74,8 +79,10 @@ body {
   }
 }
 
+/* Phần nội dung dưới */
 .content {
   padding: 20px;
+  background-color: #1c1c1c; /* Màu nền của phần dưới */
 }
 
 .content h1 {
