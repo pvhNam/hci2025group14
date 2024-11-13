@@ -95,5 +95,81 @@
         </table>
       </div>
     </div>
+    <footer id="footer">
+      <div class="container text-center">
+        <h3>Group 14</h3>
+        <div class="social-links">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+       
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+      </div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <p>Nông Lâm University</p>
+          <p>Thủ Đức City, Hồ Chí Minh City, Việt Nam</p>
+          <p>Phone: +84 862 210 723</p>
+          <p>Email: group?@gmail.com</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="text-xl font-bold mb-4">Useful Links</h3>
+          <ul>
+            <li><a href="#" class="hover:underline hover:text-blue-400">Home</a></li>
+            <li><a href="#" class="hover:underline hover:text-blue-400">About</a></li>
+            <li><a href="#" class="hover:underline hover:text-blue-400">Group Diary</a></li>
+            <li><a href="#" class="hover:underline hover:text-blue-400">Project</a></li>
+            <li><a href="#" class="hover:underline hover:text-blue-400">Technical</a></li>
+            <li><a href="#" class="hover:underline hover:text-blue-400">Style Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="text-xl font-bold mb-4">Our Members</h3>
+          <ul>
+            <li>Phạm Văn Hoài Nam</li>
+            <li>Nguyễn Quang Thành</li>
+            <li>Trần Xuân Hùng</li>
+            <li>Nguyễn Doãn Thu Phương</li>
+            <li>Ngô Quang Khánh</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong>Valera</strong>. All Rights Reserved
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
+  <button id="backToTop" class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden">
+    &#8679; <!-- Mũi tên lên -->
+</button>
+  <script>
+    const backToTopButton = document.getElementById('backToTop');
+
+// Hiện nút khi cuộn xuống 300px
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopButton.classList.remove('hidden');
+  } else {
+      backToTopButton.classList.add('hidden');
+  }
+};
+
+// Khi nút được nhấp, cuộn lên đầu trang
+backToTopButton.onclick = function() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Cuộn mượt mà
+  });
+};
+  </script>
 </html>
