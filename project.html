@@ -1,244 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project - Group 14</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project</title>
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link href="css/styleproject.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-900 text-white">
-    <!-- Header -->
-    <header
-      class="bg-black-900 p-4 flex justify-between items-center shadow-md"
-    >
-      <h1 class="text-2xl font-bold">GROUP 14</h1>
-      <nav class="space-x-4">
-        <a class="hover:underline text-white" href="index.html">Home</a>
-        <a class="hover:underline text-white" href="about.html">About</a>
-        <a class="hover:underline text-white" href="#">Group Diary</a>
-        <a class="hover:underline text-white" href="project.html">Project</a>
-        <a class="hover:underline text-white" href="contact.html">Contact</a>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h1>Group14</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="groupdiary.html">Group Diary</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <button
-        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-black-700 transition duration-300"
-      >
-        Go to project
-      </button>
-    </header>
+    </div>
+    <div class="content">
+      <h1>Project</h1>
 
-    <!-- Main Content -->
-    <main class="container mx-auto py-12">
-      <h2 class="text-center text-4xl font-bold mb-12">
-        Project - Member Contributions
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <!-- Member 1 -->
-        <div
-          class="bg-gray-800 p-8 rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300"
-        >
-          <h3 class="text-2xl font-bold mb-4">Phạm Văn Hoài Nam</h3>
-          <p class="text-blue-400 mb-4">Leader</p>
-          <ul class="space-y-4">
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-1.com"
-                target="_blank"
-              >
-                Assignment 1: Backend Setup
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-2.com"
-                target="_blank"
-              >
-                Assignment 2: API Integration
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Member 2 -->
-        <div
-          class="bg-gray-800 p-8 rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300"
-        >
-          <h3 class="text-2xl font-bold mb-4">Nguyễn Quang Thành</h3>
-          <p class="text-blue-400 mb-4">Frontend Developer</p>
-          <ul class="space-y-4">
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-1.com"
-                target="_blank"
-              >
-                Assignment 1: UI Design
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-2.com"
-                target="_blank"
-              >
-                Assignment 2: Frontend Development
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Member 3 -->
-        <div
-          class="bg-gray-800 p-8 rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300"
-        >
-          <h3 class="text-2xl font-bold mb-4">Trần Xuân Hùng</h3>
-          <p class="text-blue-400 mb-4">Project Manager</p>
-          <ul class="space-y-4">
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-1.com"
-                target="_blank"
-              >
-                Assignment 1: Task Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-2.com"
-                target="_blank"
-              >
-                Assignment 2: Timeline Management
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Member 4 -->
-        <div
-          class="bg-gray-800 p-8 rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300"
-        >
-          <h3 class="text-2xl font-bold mb-4">Nguyễn Doãn Thu Phương</h3>
-          <p class="text-blue-400 mb-4">Web Designer</p>
-          <ul class="space-y-4">
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-1.com"
-                target="_blank"
-              >
-                Assignment 1: UX Research
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-2.com"
-                target="_blank"
-              >
-                Assignment 2: Interface Design
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Member 5 -->
-        <div
-          class="bg-gray-800 p-8 rounded-lg text-center shadow-lg transform hover:scale-105 transition duration-300"
-        >
-          <h3 class="text-2xl font-bold mb-4">Ngô Quang Khánh</h3>
-          <p class="text-blue-400 mb-4">Developer</p>
-          <ul class="space-y-4">
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-1.com"
-                target="_blank"
-              >
-                Assignment 1: Database Setup
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-green-400 hover:underline"
-                href="https://link-to-assignment-2.com"
-                target="_blank"
-              >
-                Assignment 2: Data Migration
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="tabs">
+        <button class="active">Requirement</button>
+        <button>Design</button>
+        <button>Implement</button>
       </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-700 py-8">
-      <div class="container mx-auto flex justify-between">
-        <div>
-          <h3 class="text-xl font-bold mb-4">GROUP 14</h3>
-          <p>
-            Nông Lâm University
-            <br />
-            Thủ Đức City, Hồ Chí Minh City, Việt Nam
-          </p>
-          <p>Phone: +84 862 210 723</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-4">Useful Links</h3>
-          <ul>
-            <li><a class="hover:underline" href="#"> Home </a></li>
-            <li><a class="hover:underline" href="#"> About </a></li>
-            <li><a class="hover:underline" href="#"> Group Diary </a></li>
-            <li><a class="hover:underline" href="#"> Project </a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-4">Our Members</h3>
-          <ul>
-            <li>Phạm Văn Hoài Nam</li>
-            <li>Nguyễn Quang Thành</li>
-            <li>Trần Xuân Hùng</li>
-            <li>Nguyễn Doãn Thu Phương</li>
-            <li>Ngô Quang Khánh</li>
-          </ul>
-        </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Trang</th>
+              <th>Người đề xuất</th>
+              <th>Người thiết kế</th>
+              <th>Người thực hiện</th>
+              <th>Thời gian dự kiến</th>
+              <th>Độ Hoàn Thiện</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Groupdiary</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Ngô Quang khánh</td>
+              <td>Ngô Quang khánh</td>
+              <td>14/11/2024</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Menu Projects</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>14/11/2024</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Đăng Nhập, Đăng Ký, Quên Mật Khẩu</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>14/11/2024</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Trang liên hệ</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Trần Xuân Hùng</td>
+              <td>14/11/2024</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Design, Implement</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>14/11/2024</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="text-center mt-4">
-        <p class="text-gray-200">© 2024 Group 14. All rights reserved.</p>
-      </div>
-    </footer>
-    <button
-      id="backToTop"
-      class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden"
-    >
-      &#8679;
-      <!-- Mũi tên lên -->
-    </button>
-    <script>
-      const backToTopButton = document.getElementById("backToTop");
-
-      // Hiện nút khi cuộn xuống 300px
-      window.onscroll = function () {
-        if (
-          document.body.scrollTop > 300 ||
-          document.documentElement.scrollTop > 300
-        ) {
-          backToTopButton.classList.remove("hidden");
-        } else {
-          backToTopButton.classList.add("hidden");
-        }
-      };
-
-      // Khi nút được nhấp, cuộn lên đầu trang
-      backToTopButton.onclick = function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth", // Cuộn mượt mà
-        });
-      };
-    </script>
+    </div>
   </body>
 </html>
