@@ -19,9 +19,6 @@ body {
 }
 
 .header nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   flex-grow: 1;
 }
 
@@ -30,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .header nav ul li {
@@ -45,17 +43,35 @@ body {
   text-decoration: underline;
 }
 
-.header .btn {
-  background-color: #d32f2f;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.header .navbar .bi-list {
+  display: none;
 }
 
-.header .btn:hover {
-  background-color: #b71c1c;
+@media (max-width: 768px) {
+  .header nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #4b4b00;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .header nav ul li {
+    margin: 10px 0;
+  }
+
+  .header .navbar .bi-list {
+    display: block;
+    color: #e0e0e0;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .header nav ul.active {
+    display: flex;
+  }
 }
 
 .content {
@@ -121,35 +137,4 @@ table td {
 
 table th {
   background-color: #333;
-}
-
-.header .navbar .bi-list {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .header nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #4b4b00;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  .header nav ul li {
-    margin: 10px 0;
-  }
-
-  .header .navbar .bi-list {
-    display: block;
-    color: #e0e0e0;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .header nav ul.active {
-    display: flex;
-  }
 }
