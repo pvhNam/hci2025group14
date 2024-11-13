@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-  background-color: #000000;
+  background-color: #1c1c1c;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
@@ -45,6 +45,9 @@ header nav a {
 header nav a:hover,
 header nav .active {
   color: #3498db;
+}
+header nav a.active {
+  color: #3498db; /* Màu xanh biển */
 }
 
 section.relative {
