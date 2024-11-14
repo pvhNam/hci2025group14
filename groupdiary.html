@@ -24,30 +24,20 @@
   </head>
   <body>
     <!-- Navigation -->
-    <header id="header" class="header fixed-top bg-light shadow-sm">
+    <header id="header" class="header fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <a href="#" class="logo text-decoration-none">
-          <h1 class="m-0 text-primary">Group14</h1>
+        <a href="#" class="logo">
+          <h1>Group14</h1>
         </a>
+
         <nav id="navbar" class="navbar">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="home.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="project.html" class="nav-link">Project</a>
-            </li>
-            <li class="nav-item">
-              <a href="groupdiary.html" class="nav-link">Group Diary</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="groupdiary.html" class="active">Groupdiary</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
     </header>
@@ -955,10 +945,10 @@
     <!-- Phần mũi tên -->
     <button
       id="backToTop"
-      class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden"
+      class="fixed bottom-4 right-4 rounded-full w-12 h-12 flex items-center justify-center border border-gray-300 shadow-lg bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-200 hidden"
     >
-      &#8679;
-      <!-- Mũi tên lên -->
+      <i class="fas fa-arrow-up"></i>
+      <!-- Sử dụng font-awesome cho mũi tên lên -->
     </button>
 
     <script

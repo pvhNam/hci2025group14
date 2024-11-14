@@ -20,7 +20,7 @@ body {
 
 .logo h1 {
   font-size: 26px;
-  color: #007bff;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -32,30 +32,26 @@ h1.container {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-.navbar .nav-link {
-  color: #555;
-  font-weight: 500;
-  padding: 10px 15px;
-  margin: 0 5px;
-  transition: color 0.3s, background-color 0.3s;
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-.navbar .nav-link.active {
-  color: #007bff;
-  background-color: #e0f0ff;
-  border-radius: 5px;
+.navbar li {
+  margin-left: 30px;
 }
 
-.navbar .nav-link:hover {
-  color: #0056b3;
-  background-color: #e0f0ff;
-  border-radius: 5px;
+.navbar a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.navbar .bi-list {
-  font-size: 28px;
-  color: #555;
-  cursor: pointer;
+.navbar a:hover,
+.navbar .active {
+  color: #007aff;
 }
 
 .tabs {
@@ -283,7 +279,7 @@ h1.container {
   height: 48px;
   border: 1px solid #000;
   background-color: #fff;
-  color: #000;
+  color: #0198fd;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -294,7 +290,7 @@ h1.container {
 
 #backToTop:hover {
   background-color: #3498db;
-  color: #ffffff;
+  color: #00b6f8;
 }
 
 #backToTop.hidden {
@@ -328,7 +324,7 @@ h1.container {
 }
 
 .social-icons a .fa-twitter:hover {
-  color: #1da1f2; /* Màu xanh của Twitter */
+  color: #5fd5f2; /* Màu xanh của Twitter */
 }
 
 .social-icons a .fa-facebook-f:hover {
@@ -344,5 +340,5 @@ h1.container {
 }
 
 .social-icons a .fa-linkedin-in:hover {
-  color: #0077b5; /* Màu xanh của LinkedIn */
+  color: #29839a; /* Màu xanh của LinkedIn */
 }
