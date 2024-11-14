@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group14 Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styledaily1.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header id="header" class="header fixed-top bg-light shadow-sm">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="#" class="logo text-decoration-none">
+          <h1 class="m-0 text-primary">Group14</h1>
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="groupdiary.html" class="nav-link">Group Diary</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+      <h1 class="container mb-4">Group Diary</h1>
+
+      <!-- Tabs for Weeks -->
+      <div class="tabs d-flex justify-content-center mb-4">
+        <a onclick="showWeek(1)" class="tab-link active">Week 1</a>
+        <a onclick="showWeek(2)" class="tab-link">Week 2</a>
+        <a onclick="showWeek(3)" class="tab-link">Week 3</a>
+        <a onclick="showWeek(4)" class="tab-link">Week 4</a>
+        <a onclick="showWeek(5)" class="tab-link">Week 5</a>
+        <a onclick="showWeek(6)" class="tab-link">Week 6</a>
+        <a onclick="showWeek(7)" class="tab-link">Week 7</a>
+        <a onclick="showWeek(8)" class="tab-link">Week 8</a>
+        <a onclick="showWeek(9)" class="tab-link">Week 9</a>
+      </div>
+
+      <!-- Week 1 Table -->
+      <div class="table-container active" id="week1">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week1-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week1-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week1-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week1-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week1-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 1 -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Week 2 Table -->
+      <div class="table-container" id="week2">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 2 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 3 Table -->
+      <div class="table-container" id="week3">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 3 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 4 Table -->
+      <div class="table-container" id="week4">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 4 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 5 Table -->
+      <div class="table-container" id="week5">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 5 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 6 Table -->
+      <div class="table-container" id="week6">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 6 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 7 Table -->
+      <div class="table-container" id="week7">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 7 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 8 Table -->
+      <div class="table-container" id="week8">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 8 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Week 9 Table -->
+      <div class="table-container" id="week9">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130200</td>
+              <td>Phạm Văn Hoài Nam</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
+              <td>
+                <div class="battery-cell-container">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell battery-cell-half"></div>
+                  <div class="battery-cell battery-cell-empty"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 9 -->
+            <tr>
+              <td>2</td>
+              <td>23130307</td>
+              <td>Nguyễn Quang Thành</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell battery-cell-half"></div>
+                  <div class="battery-cell battery-cell-empty"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23130125</td>
+              <td>Trần Xuân Hùng</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell battery-cell-half"></div>
+                  <div class="battery-cell battery-cell-empty"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>23130253</td>
+              <td>Nguyễn Doãn Thu Phương</td>
+              <td>Tự thêm vô nhé</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell battery-cell-half"></div>
+                  <div class="battery-cell battery-cell-empty"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>23130152</td>
+              <td>Ngô Quang Khánh</td>
+              <td>tui cx ko bk ghi gì</td>
+              <td>
+                <div class="battery-cell-container" id="week2-task1">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell battery-cell-half"></div>
+                  <div class="battery-cell battery-cell-empty"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Additional Weeks (Week 3, Week 4, etc.) can follow the same pattern -->
+    </main>
+
+    <script>
+      function updateCompletionRate(percentage, weekNumber) {
+        const totalCells = 5;
+        const fullCells = Math.floor(percentage / 20);
+        const halfCells = percentage % 20 > 0 ? 1 : 0;
+        const emptyCells = totalCells - fullCells - halfCells;
+
+        const cells = document.querySelectorAll(
+          `#week${weekNumber} .battery-cell`
+        );
+        for (let i = 0; i < totalCells; i++) {
+          if (i < fullCells) {
+            cells[i].classList.remove("empty", "half");
+            cells[i].classList.add("full");
+          } else if (i < fullCells + halfCells) {
+            cells[i].classList.remove("empty", "full");
+            cells[i].classList.add("half");
+          } else {
+            cells[i].classList.remove("full", "half");
+            cells[i].classList.add("empty");
+          }
+        }
+      }
+
+      function showWeek(weekNumber) {
+        const weekContents = document.querySelectorAll(".table-container");
+        weekContents.forEach((week) => {
+          week.classList.add("d-none");
+        });
+
+        // Loại bỏ lớp d-none và thêm active cho tuần hiện tại
+        const currentWeek = document.getElementById(`week${weekNumber}`);
+        if (currentWeek) {
+          currentWeek.classList.remove("d-none");
+          currentWeek.classList.add("active");
+        }
+
+        // Cập nhật trạng thái active của các tab
+        const tabs = document.querySelectorAll(".tabs .tab-link");
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        tabs[weekNumber - 1]?.classList.add("active"); // Kiểm tra nếu tồn tại tab trước khi thêm active
+
+        const percentage = getPercentageForWeek(weekNumber);
+        updateCompletionRate(percentage, weekNumber);
+      }
+    </script>
+  </body>
+</html>

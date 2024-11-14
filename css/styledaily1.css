@@ -1,0 +1,200 @@
+/* Reset styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+}
+
+.header {
+  padding: 15px 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 26px;
+  color: #007bff;
+  font-weight: 700;
+}
+
+h1.container {
+  font-size: 3em;
+  font-weight: bold;
+  color: #1a2c36;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.navbar .nav-link {
+  color: #555;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-link.active {
+  color: #007bff;
+  background-color: #e0f0ff;
+  border-radius: 5px;
+}
+
+.navbar .nav-link:hover {
+  color: #0056b3;
+  background-color: #e0f0ff;
+  border-radius: 5px;
+}
+
+.navbar .bi-list {
+  font-size: 28px;
+  color: #555;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tab-link {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.tab-link:hover {
+  background: #007bff;
+  transform: scale(1.05);
+}
+
+.tab-link.active {
+  background: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.table-container {
+  display: none;
+}
+
+.table-container.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.table td,
+.table th {
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container bao bọc cục pin */
+.battery-cell-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px; /* Khoảng cách giữa các ô pin */
+}
+
+/* Cục pin với hiệu ứng thực tế */
+.battery-cell {
+  width: 30px;
+  height: 18px;
+  background: linear-gradient(145deg, #e0e0e0, #c0c0c0);
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Đầu pin để trông như thật hơn */
+.battery-cell::before {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 30%;
+  width: 3px;
+  height: 40%;
+  background-color: #bbb;
+  border-radius: 1px;
+}
+
+/* Pin đầy đủ màu xanh */
+.battery-cell {
+  background: linear-gradient(145deg, #28a745, #1c7b31);
+  box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.6); /* Ánh sáng xanh */
+}
+
+/* Pin nửa đầy màu vàng */
+.battery-cell-half {
+  background: linear-gradient(145deg, #ffc107, #d4a009);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.6); /* Ánh sáng vàng */
+}
+
+/* Pin rỗng màu xám */
+.battery-cell-empty {
+  background: linear-gradient(145deg, #ff0000, #ff0000);
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* Ánh sáng đỏ */
+}
+
+/* Hiệu ứng khi pin đầy */
+.battery-cell.full {
+  transform: scale(1.05); /* Phóng to nhẹ để thêm sự sống động */
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile-friendly styling */
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    margin: 0 3px;
+    font-size: 13px;
+  }
+
+  .tab-link {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
