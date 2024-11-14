@@ -149,24 +149,31 @@ main {
 
 #backToTop {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
-  width: 48px;
-  height: 48px;
-  border: 1px solid #000;
-  background-color: #fff;
-  color: #000;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #f218f9;
+  color: #000000; /* Màu vàng neon cho mũi tên */
+  font-size: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 171, 0.6);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 #backToTop:hover {
-  background-color: #3498db;
-  color: #ffffff;
+  transform: scale(1.1) rotate(360deg);
+  background: linear-gradient(135deg, #00d2ff, #00ffab);
+  color: #ff00f7; /* Màu vàng sáng hơn khi hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 171, 0.8),
+    0 0 30px rgba(20, 187, 225, 0.8);
+  border: 2px solid rgba(19, 209, 252, 0.5);
 }
 
 #backToTop.hidden {
