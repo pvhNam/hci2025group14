@@ -16,34 +16,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styledaily1.css" />
   </head>
   <body>
     <!-- Navigation -->
-    <header id="header" class="header fixed-top bg-light shadow-sm">
+    <header id="header" class="header fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <a href="#" class="logo text-decoration-none">
-          <h1 class="m-0 text-primary">Group14</h1>
+        <a href="#" class="logo">
+          <h1>Group14</h1>
         </a>
+
         <nav id="navbar" class="navbar">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="home.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="project.html" class="nav-link">Project</a>
-            </li>
-            <li class="nav-item">
-              <a href="groupdiary.html" class="nav-link">Group Diary</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="groupdiary.html" class="active">Groupdiary</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
     </header>
@@ -896,6 +890,71 @@
       </div>
       <!-- Additional Weeks (Week 3, Week 4, etc.) can follow the same pattern -->
     </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h3>GROUP 14</h3>
+          <p>
+            Linh Trung Ward<br />
+            Thu Duc - Ho Chi Minh City - Viet Nam<br />
+            <strong>Phone:</strong> +0862210723<br />
+            <strong>Email:</strong> group14@gmail.com
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Useful Links</h3>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">About us</a></p>
+          <p><a href="#">Services</a></p>
+          <p><a href="#">Terms of service</a></p>
+          <p><a href="#">Privacy policy</a></p>
+        </div>
+        <div>
+          <h3>Our Services</h3>
+          <p><a href="#">Web Design</a></p>
+          <p><a href="#">Web Development</a></p>
+          <p><a href="#">Product Management</a></p>
+          <p><a href="#">Marketing</a></p>
+          <p><a href="#">Graphic Design</a></p>
+        </div>
+        <div>
+          <h3>Our Newsletter</h3>
+          <p>
+            Tamen quem nulla quae legam multos aute sint culpa legam nostrer
+            magna
+          </p>
+          <form class="newsletter">
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>© Copyright <strong>GROUP 14</strong>. All Rights Reserved</p>
+      <p>Designed by GROUP 14</p>
+    </div>
+    <!-- Phần mũi tên -->
+    <button
+      id="backToTop"
+      class="fixed bottom-4 right-4 rounded-full w-12 h-12 flex items-center justify-center border border-gray-300 shadow-lg bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-200 hidden"
+    >
+      <i class="fas fa-arrow-up"></i>
+      <!-- Sử dụng font-awesome cho mũi tên lên -->
+    </button>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       function updateCompletionRate(percentage, weekNumber) {
@@ -944,6 +1003,28 @@
         const percentage = getPercentageForWeek(weekNumber);
         updateCompletionRate(percentage, weekNumber);
       }
+
+      const backToTopButton = document.getElementById("backToTop");
+
+      // Hiện nút khi cuộn xuống 300px
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTopButton.classList.remove("hidden");
+        } else {
+          backToTopButton.classList.add("hidden");
+        }
+      };
+
+      // Khi nút được nhấp, cuộn lên đầu trang
+      backToTopButton.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Cuộn mượt mà
+        });
+      };
     </script>
   </body>
 </html>

@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f0f2f5;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .logo h1 {
   font-size: 26px;
-  color: #007bff;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -32,30 +32,26 @@ h1.container {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-.navbar .nav-link {
-  color: #555;
-  font-weight: 500;
-  padding: 10px 15px;
-  margin: 0 5px;
-  transition: color 0.3s, background-color 0.3s;
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-.navbar .nav-link.active {
-  color: #007bff;
-  background-color: #e0f0ff;
-  border-radius: 5px;
+.navbar li {
+  margin-left: 30px;
 }
 
-.navbar .nav-link:hover {
-  color: #0056b3;
-  background-color: #e0f0ff;
-  border-radius: 5px;
+.navbar a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.navbar .bi-list {
-  font-size: 28px;
-  color: #555;
-  cursor: pointer;
+.navbar a:hover,
+.navbar .active {
+  color: #007aff;
 }
 
 .tabs {
@@ -68,7 +64,7 @@ h1.container {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
-  background: linear-gradient(145deg, #007bff, #0056b3);
+  background: #007bff;
   color: white;
   font-weight: 500;
   transition: background 0.3s, transform 0.2s;
@@ -77,7 +73,7 @@ h1.container {
 
 .tab-link:hover {
   background: #007bff;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .tab-link.active {
@@ -197,4 +193,152 @@ h1.container {
     font-size: 13px;
     padding: 8px 10px;
   }
+}
+.footer {
+  background-color: #4a5861;
+  color: #ffffff;
+  padding: 40px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer .container div {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.newsletter {
+  display: flex; /* Đặt các phần tử con theo hàng ngang */
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px; /* Bo tròn chỉ bên trái */
+  width: 200px;
+}
+
+.newsletter input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-left: none; /* Bỏ đường viền giữa email và nút */
+  background-color: #007bff; /* Màu nền cho nút */
+  color: white; /* Màu chữ cho nút */
+  border-radius: 0 5px 5px 0; /* Bo tròn chỉ bên phải */
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+.footer-bottom {
+  background-color: #3b454e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+#backToTop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #0198fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+#backToTop:hover {
+  background-color: #3498db;
+  color: #00b6f8;
+}
+
+#backToTop.hidden {
+  display: none;
+}
+/* Container styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa các biểu tượng */
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left; /* Căn giữa các biểu tượng */
+  align-items: left; /* Đảm bảo các biểu tượng thẳng hàng */
+  gap: 15px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icons a {
+  font-size: 24px; /* Kích thước biểu tượng */
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng hover riêng cho từng logo */
+.social-icons a:hover {
+  transform: scale(1.2); /* Phóng to khi hover */
+}
+
+.social-icons a .fa-twitter:hover {
+  color: #5fd5f2; /* Màu xanh của Twitter */
+}
+
+.social-icons a .fa-facebook-f:hover {
+  color: #0876fd; /* Màu xanh của Facebook */
+}
+
+.social-icons a .fa-instagram:hover {
+  color: #e1306c; /* Màu hồng của Instagram */
+}
+
+.social-icons a .fa-skype:hover {
+  color: #16f979; /* Màu xanh của Skype */
+}
+
+.social-icons a .fa-linkedin-in:hover {
+  color: #29839a; /* Màu xanh của LinkedIn */
 }
