@@ -151,24 +151,29 @@ main {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #3498db, #2085c9);
-  color: #ffffff;
-  font-size: 24px;
+  width: 55px;
+  height: 55px;
+  background: #f218f9;
+  color: #000000; /* Màu vàng neon cho mũi tên */
+  font-size: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 171, 0.6);
   transition: all 0.3s ease;
   cursor: pointer;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 #backToTop:hover {
-  transform: scale(1.1);
-  background: linear-gradient(135deg, #2085c9, #3498db);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1) rotate(360deg);
+  background: linear-gradient(135deg, #00d2ff, #00ffab);
+  color: #ff00f7; /* Màu vàng sáng hơn khi hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 171, 0.8),
+    0 0 30px rgba(20, 187, 225, 0.8);
+  border: 2px solid rgba(19, 209, 252, 0.5);
 }
 
 #backToTop.hidden {
