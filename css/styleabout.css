@@ -149,24 +149,26 @@ main {
 
 #backToTop {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
-  width: 48px;
-  height: 48px;
-  border: 1px solid #000;
-  background-color: #fff;
-  color: #000;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #3498db, #2085c9);
+  color: #ffffff;
+  font-size: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 #backToTop:hover {
-  background-color: #3498db;
-  color: #ffffff;
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #2085c9, #3498db);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 #backToTop.hidden {
