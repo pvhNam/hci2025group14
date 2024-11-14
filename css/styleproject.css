@@ -143,10 +143,19 @@ table td {
 table th {
   background-color: #333;
 }
+
+/* Footer */
+.footer-gray {
+  background-color: #333; /* Màu nền xám */
+  color: #e0e0e0;
+  padding: 20px 0;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .footer-column {
@@ -165,7 +174,7 @@ table th {
 
 .footer-column a {
   text-decoration: none;
-  color: #ffffff;
+  color: #e0e0e0;
 }
 
 .footer-column a:hover {
@@ -190,4 +199,11 @@ footer .text-center {
   .footer-column {
     margin-bottom: 16px;
   }
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: #e0e0e0;
 }

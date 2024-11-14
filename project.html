@@ -95,7 +95,7 @@
         </table>
       </div>
     </div>
-    <footer id="footer">
+    <footer id="footer" class="footer-gray">
       <div class="container text-center">
         <h3>Group 14</h3>
         <div class="social-links">
@@ -104,12 +104,6 @@
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
-       
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
       </div>
       <div class="footer-content">
         <div class="footer-column">
@@ -140,36 +134,34 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="copyright">
-      &copy; Copyright <strong>Valera</strong>. All Rights Reserved
-    </div>
+      <div class="copyright">
+        &copy; Copyright <strong>Valera</strong>. All Rights Reserved
+      </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <button id="backToTop" class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden">
+      &#8679; <!-- Mũi tên lên -->
+    </button>
+    <script>
+      const backToTopButton = document.getElementById('backToTop');
+
+      // Hiện nút khi cuộn xuống 300px
+      window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          backToTopButton.classList.remove('hidden');
+        } else {
+          backToTopButton.classList.add('hidden');
+        }
+      };
+
+      // Khi nút được nhấp, cuộn lên đầu trang
+      backToTopButton.onclick = function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Cuộn mượt mà
+        });
+      };
+    </script>
   </body>
-  <button id="backToTop" class="fixed bottom-4 right-4 text-black-500 rounded-full w-12 h-12 flex items-center justify-center border border-black-500 shadow hover:bg-blue-900 hover:text-white transition-all duration-200 hidden">
-    &#8679; <!-- Mũi tên lên -->
-</button>
-  <script>
-    const backToTopButton = document.getElementById('backToTop');
-
-// Hiện nút khi cuộn xuống 300px
-window.onscroll = function() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      backToTopButton.classList.remove('hidden');
-  } else {
-      backToTopButton.classList.add('hidden');
-  }
-};
-
-// Khi nút được nhấp, cuộn lên đầu trang
-backToTopButton.onclick = function() {
-  window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Cuộn mượt mà
-  });
-};
-  </script>
 </html>
