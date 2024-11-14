@@ -19,8 +19,51 @@
     <link rel="stylesheet" href="css/styledaily1.css" />
   </head>
   <body>
+    <!-- Navigation -->
+    <header id="header" class="header fixed-top bg-light shadow-sm">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="#" class="logo text-decoration-none">
+          <h1 class="m-0 text-primary">Group14</h1>
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="groupdiary.html" class="nav-link">Group Diary</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
     <main class="container mt-5 pt-5">
       <h1 class="container mb-4">Group Diary</h1>
+
+      <!-- Tabs for Weeks -->
+      <div class="tabs d-flex justify-content-center mb-4">
+        <a onclick="showWeek(1)" class="tab-link active">Week 1</a>
+        <a onclick="showWeek(2)" class="tab-link">Week 2</a>
+        <a onclick="showWeek(3)" class="tab-link">Week 3</a>
+        <a onclick="showWeek(4)" class="tab-link">Week 4</a>
+        <a onclick="showWeek(5)" class="tab-link">Week 5</a>
+        <a onclick="showWeek(6)" class="tab-link">Week 6</a>
+        <a onclick="showWeek(7)" class="tab-link">Week 7</a>
+        <a onclick="showWeek(8)" class="tab-link">Week 8</a>
+        <a onclick="showWeek(9)" class="tab-link">Week 9</a>
+      </div>
 
       <!-- Week 1 Table -->
       <div class="table-container active" id="week1">
@@ -41,88 +84,145 @@
               <td>Nguyễn Hữu Duy</td>
               <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
               <td>
-                <div class="completion-rate">
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
+                <div id="week1-progress">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>23130076</td>
-              <td>Nguyễn Văn A</td>
-              <td>Thiết kế giao diện website</td>
+              <td>1</td>
+              <td>23130075</td>
+              <td>Nguyễn Hữu Duy</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
               <td>
-                <div class="completion-rate">
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell half"></div>
-                  <div class="battery-cell empty"></div>
-                  <div class="battery-cell empty"></div>
+                <div id="week1-progress">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>3</td>
-              <td>23130077</td>
-              <td>Trần Thị B</td>
-              <td>Viết mã API cho trang đăng nhập</td>
+              <td>1</td>
+              <td>23130075</td>
+              <td>Nguyễn Hữu Duy</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
               <td>
-                <div class="completion-rate">
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell empty"></div>
-                  <div class="battery-cell empty"></div>
+                <div id="week1-progress">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>4</td>
-              <td>23130078</td>
-              <td>Phạm Quang C</td>
-              <td>Quản lý cơ sở dữ liệu cho hệ thống</td>
+              <td>1</td>
+              <td>23130075</td>
+              <td>Nguyễn Hữu Duy</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
               <td>
-                <div class="completion-rate">
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell half"></div>
-                  <div class="battery-cell empty"></div>
-                  <div class="battery-cell empty"></div>
-                  <div class="battery-cell empty"></div>
+                <div id="week1-progress">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>5</td>
-              <td>23130079</td>
-              <td>Vũ Minh D</td>
-              <td>Kiểm thử các tính năng của hệ thống</td>
+              <td>1</td>
+              <td>23130075</td>
+              <td>Nguyễn Hữu Duy</td>
+              <td>Tạo Repository cho web nhóm, chia việc cho mọi người</td>
               <td>
-                <div class="completion-rate">
-                  <div class="battery-cell full"></div>
-                  <div class="battery-cell half"></div>
-                  <div class="battery-cell half"></div>
-                  <div class="battery-cell empty"></div>
-                  <div class="battery-cell empty"></div>
+                <div id="week1-progress">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
                 </div>
               </td>
             </tr>
+            <!-- More rows for Week 1 -->
           </tbody>
         </table>
       </div>
+
+      <!-- Week 2 Table -->
+      <div class="table-container" id="week2">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Stt</th>
+              <th>Mssv</th>
+              <th>Name</th>
+              <th>Work</th>
+              <th>Completion Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>23130075</td>
+              <td>Nguyễn Hữu Duy</td>
+              <td>Hoàn thiện tính năng đăng nhập</td>
+              <td>
+                <div id="week1-progress">
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                  <div class="battery-cell"></div>
+                </div>
+              </td>
+            </tr>
+            <!-- More rows for Week 2 -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Additional Weeks (Week 3, Week 4, etc.) can follow the same pattern -->
     </main>
 
     <script>
-      // JavaScript code to handle week switching (if needed for tabbed view)
+      function updateCompletionRate(percentage, weekNumber) {
+        const totalCells = 5;
+        const fullCells = Math.floor(percentage / 20);
+        const halfCells = percentage % 20 > 0 ? 1 : 0;
+        const emptyCells = totalCells - fullCells - halfCells;
+
+        const cells = document.querySelectorAll(
+          `#week${weekNumber} .battery-cell`
+        );
+        for (let i = 0; i < totalCells; i++) {
+          if (i < fullCells) {
+            cells[i].classList.remove("empty", "half");
+            cells[i].classList.add("full");
+          } else if (i < fullCells + halfCells) {
+            cells[i].classList.remove("empty", "full");
+            cells[i].classList.add("half");
+          } else {
+            cells[i].classList.remove("full", "half");
+            cells[i].classList.add("empty");
+          }
+        }
+      }
+
       function showWeek(weekNumber) {
         const weekContents = document.querySelectorAll(".table-container");
         weekContents.forEach((week) => {
           week.classList.add("d-none");
         });
-
         document.getElementById(`week${weekNumber}`).classList.remove("d-none");
 
         const tabs = document.querySelectorAll(".tabs .tab-link");
@@ -130,9 +230,29 @@
           tab.classList.remove("active");
         });
         tabs[weekNumber - 1].classList.add("active");
+
+        const percentage = getPercentageForWeek(weekNumber);
+        updateCompletionRate(percentage, weekNumber);
       }
 
-      document.addEventListener("DOMContentLoaded", () => showWeek(1));
+      function getPercentageForWeek(weekNumber) {
+        const percentages = {
+          1: 60,
+          2: 80,
+          3: 40,
+          4: 100,
+          5: 20,
+          6: 50,
+          7: 90,
+          8: 70,
+          9: 30,
+        };
+        return percentages[weekNumber] || 0;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showWeek(1);
+      });
     </script>
   </body>
 </html>
