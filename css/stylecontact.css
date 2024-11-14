@@ -155,6 +155,78 @@ body {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+#backToTop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #0198fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+#backToTop:hover {
+  background-color: #3498db;
+  color: #00b6f8;
+}
+
+#backToTop.hidden {
+  display: none;
+}
+/* Container styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa các biểu tượng */
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left; /* Căn giữa các biểu tượng */
+  align-items: left; /* Đảm bảo các biểu tượng thẳng hàng */
+  gap: 15px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icons a {
+  font-size: 24px; /* Kích thước biểu tượng */
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng hover riêng cho từng logo */
+.social-icons a:hover {
+  transform: scale(1.2); /* Phóng to khi hover */
+}
+
+.social-icons a .fa-twitter:hover {
+  color: #5fd5f2; /* Màu xanh của Twitter */
+}
+
+.social-icons a .fa-facebook-f:hover {
+  color: #0876fd; /* Màu xanh của Facebook */
+}
+
+.social-icons a .fa-instagram:hover {
+  color: #e1306c; /* Màu hồng của Instagram */
+}
+
+.social-icons a .fa-skype:hover {
+  color: #16f979; /* Màu xanh của Skype */
+}
+
+.social-icons a .fa-linkedin-in:hover {
+  color: #29839a; /* Màu xanh của LinkedIn */
+}
+
 /* Contact Section */
 .contact-container {
   display: flex;
@@ -162,12 +234,13 @@ body {
   margin: auto;
   background-color: var(--light-color);
   color: var(--light-color);
- 
+
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.contact-form, .contact-info {
+.contact-form,
+.contact-info {
   width: 50%;
   padding: 30px;
 }
