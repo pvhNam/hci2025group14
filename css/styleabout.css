@@ -180,12 +180,6 @@ main {
 #backToTop.hidden {
   display: none;
 }
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .footer {
   background-color: #4a5861;
   color: #ffffff;
