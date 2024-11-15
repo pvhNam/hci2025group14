@@ -8,19 +8,50 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styleabout.css" />
   </head>
   <body>
-    <div class="header">
-      <h1>Group14</h1>
-      <div class="nav">
-        <a href="home.html">Home</a>
-        <a class="active" href="#">About</a>
-        <a href="project.html">Project</a>
-        <a href="groupdiary.html">Groupdiary</a>
-        <a href="contact.html">Contact</a>
+    <header id="header" class="header fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="#" class="logo">
+          <h1>Group14</h1>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+            <li><a href="groupdiary.html">Groupdiary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
+    <h2>n</h2>
+    <h6>d</h6>
+    <h1>About</h1>
+
     <div class="container">
       <div class="card">
         <img
@@ -131,19 +162,22 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
       <div class="container">
         <div>
           <h3>GROUP 14</h3>
-          <p>Linh Trung Ward</p>
-          <p>Thu Duc - Ho Chi Minh City - Viet Nam</p>
-          <p>Phone: +0862120772</p>
-          <p>Email: group14@gmail.com</p>
-          <div class="social">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
+          <p>
+            Linh Trung Ward<br />
+            Thu Duc - Ho Chi Minh City - Viet Nam<br />
+            <strong>Phone:</strong> +0862210723<br />
+            <strong>Email:</strong> group14@gmail.com
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
         <div>
@@ -156,27 +190,30 @@
         </div>
         <div>
           <h3>Our Services</h3>
-          <p>Web Design</p>
-          <p>Web Development</p>
-          <p>Product Management</p>
-          <p>Marketing</p>
-          <p>Graphic Design</p>
+          <p><a href="#">Web Design</a></p>
+          <p><a href="#">Web Development</a></p>
+          <p><a href="#">Product Management</a></p>
+          <p><a href="#">Marketing</a></p>
+          <p><a href="#">Graphic Design</a></p>
         </div>
-        <div class="newsletter">
+        <div>
           <h3>Our Newsletter</h3>
           <p>
-            Tamen quem nulla quae legam multos aute sint culpa legam noster
+            Tamen quem nulla quae legam multos aute sint culpa legam nostrer
             magna
           </p>
-          <input placeholder="Email" type="email" />
-          <button>Subscribe</button>
+          <form class="newsletter">
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Subscribe" />
+          </form>
         </div>
       </div>
-      <p>© Copyright GROUP 14. All Rights Reserved</p>
+    </footer>
+    <div class="footer-bottom">
+      <p>© Copyright <strong>GROUP 14</strong>. All Rights Reserved</p>
       <p>Designed by GROUP 14</p>
     </div>
-    <div class="back-to-top" id="back-to-top" onclick="scrollToTop()">
-      <i class="fas fa-arrow-up"></i>
-    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
