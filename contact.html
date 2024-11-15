@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/stylecontact.css" />
   </head>
   <body>
@@ -44,7 +48,7 @@
       <div id="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.430711283102!2d106.79282385476989!3d10.871218450400553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276398969f7b%3A0x9672b7efd0893fc4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOw7RuZyBMw6JtIFRQLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1728461435776!5m2!1svi!2s"
-          width="100%"
+          width="100%" 
           height="100%"
           style="border: 0"
           allowfullscreen=""
@@ -56,93 +60,89 @@
 
     <!-- About Section -->
     <div class="contact-container">
-      <div class="contact-form">
-        <h2>Write us</h2>
-        <form action="#">
-          <label for="name" class="sr-only">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            required
-          />
-
-          <label for="email" class="sr-only">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-
-          <label for="subject" class="sr-only">Subject</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject"
-            required
-          />
-
-          <label for="message" class="sr-only">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="Message"
-            required
-          ></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
-      <div class="contact-info">
-        <h2>Contact information</h2>
-        <p>We're open for any suggestion or just to have a chat</p>
-        <ul>
-          <li>
-            <i class="bi bi-geo-alt"></i>
-            <span
-              ><strong>Address:</strong> VQCR+GP6, Khu Phố 6, Thủ Đức, Thành phố
-              Hồ Chí Minh, Vietnam</span
-            >
-          </li>
-          <li>
-            <i class="bi bi-telephone"></i>
-            <span><strong>Phone:</strong> 0862210723</span>
-          </li>
-          <li>
-            <i class="bi bi-envelope"></i>
-            <span><strong>Email:</strong> hci2025group14@gamil.com</span>
-          </li>
-          <li>
-            <i class="bi bi-globe"></i>
-            <span
-              ><strong>Website:</strong> https://pvhnam.github.io/Group14/</span
-            >
-          </li>
-        </ul>
+        <div class="contact-form">
+          <h2>Write us</h2>
+          <form action="#">
+            <label for="name" > Name </label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        
+            <label for="email" >Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        
+            <label for="subject" >Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        
+            <label for="message" >Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+        
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h2>Contact information</h2>
+          <p>We're open for any suggestion or just to have a chat</p>
+          <ul>
+            <li><i class="bi bi-geo-alt"></i> <span><strong>Address:</strong> VQCR+GP6, Khu Phố 6, Thủ Đức, Thành phố Hồ Chí Minh, Vietnam</span></li>
+            <li><i class="bi bi-telephone"></i> <span><strong>Phone:</strong> 0862210723</span></li>
+            <li><i class="bi bi-envelope"></i> <span><strong>Email:</strong> hci2025group14@gamil.com</span></li>
+            <li><i class="bi bi-globe"></i> <span><strong>Website:</strong> https://pvhnam.github.io/Group14/</span></li>
+          </ul>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="container text-center">
-        <h3>Group 14</h3>
-        <div class="social-links">
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h3>GROUP 14</h3>
+          <p>
+            Linh Trung Ward<br />
+            Thu Duc - Ho Chi Minh City - Viet Nam<br />
+            <strong>Phone:</strong> +0862210723<br />
+            <strong>Email:</strong> group14@gmail.com
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-        <div class="copyright">
-          &copy; Copyright <strong>Group14</strong>. All Rights Reserved
+        <div>
+          <h3>Useful Links</h3>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">About us</a></p>
+          <p><a href="#">Services</a></p>
+          <p><a href="#">Terms of service</a></p>
+          <p><a href="#">Privacy policy</a></p>
+        </div>
+        <div>
+          <h3>Our Services</h3>
+          <p><a href="#">Web Design</a></p>
+          <p><a href="#">Web Development</a></p>
+          <p><a href="#">Product Management</a></p>
+          <p><a href="#">Marketing</a></p>
+          <p><a href="#">Graphic Design</a></p>
+        </div>
+        <div>
+          <h3>Our Newsletter</h3>
+          <p>
+            Tamen quem nulla quae legam multos aute sint culpa legam nostrer
+            magna
+          </p>
+          <form class="newsletter">
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Subscribe" />
+          </form>
         </div>
       </div>
     </footer>
+    <div class="footer-bottom">
+      <p>© Copyright <strong>GROUP 14</strong>. All Rights Reserved</p>
+      <p>Designed by GROUP 14</p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
