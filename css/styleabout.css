@@ -49,18 +49,19 @@ body {
   color: var(--primary-color);
 }
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex; /* Kích hoạt Flexbox */
+  flex-wrap: wrap; /* Cho phép các thẻ xuống hàng */
+  justify-content: center; /* Căn giữa các thẻ */
+  gap: 35px; /* Khoảng cách giữa các thẻ */
 }
 
 .card {
+  flex: 1 1 calc(30% - 20px); /* Tăng kích thước thẻ, mỗi thẻ chiếm 30% chiều rộng container */
+  max-width: 300px; /* Giới hạn chiều rộng tối đa */
   background-color: #333;
   color: #fff;
   border-radius: 8px;
-  margin: 5px;
   padding: 15px;
-  width: 250px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
@@ -75,6 +76,8 @@ body {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  display: block; /* Cần thiết để sử dụng margin tự động */
+  margin: 0 auto; /* Căn giữa hình ảnh */
 }
 
 .card h2 {
