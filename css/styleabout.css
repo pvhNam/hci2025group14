@@ -1,330 +1,194 @@
-/* style.css */
-:root {
-  --primary-color: #007aff;
-  --secondary-color: #333333;
-  --light-color: #ffffff;
-  --dark-color: #1a1a1a;
-  --accent-color: #2980b9;
-  --text-light: #cccccc;
-  --input-bg: #333333;
-  --input-border: #2980b9;
-}
+/* styles.css */
 body {
-  background-color: #1c1c1c;
-  color: #ffffff;
   font-family: Arial, sans-serif;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 .header {
-  background: var(--light-color);
-  padding: 15px 0;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.header .logo h1 {
-  font-size: 28px;
-  color: var(--secondary-color);
-  margin: 0;
-}
-
-.header .navbar ul {
-  list-style: none;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
   margin: 0;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-color: #007bff;
 }
 
-.header .navbar li {
-  margin-left: 30px;
+.nav {
+  display: flex;
 }
 
-.header .navbar a {
-  color: var(--secondary-color);
+.nav a {
+  margin: 0 15px;
   text-decoration: none;
-  transition: color 0.3s;
+  color: #333;
+  font-weight: 500;
 }
 
-.header .navbar a:hover,
-.header .navbar .active {
-  color: var(--primary-color);
+.nav a:hover {
+  color: #007bff;
 }
 
-section.relative {
-  position: relative;
-}
-
-section.relative div {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-left: 32px;
-}
-
-main {
-  padding: 32px 0;
+.nav a.active {
+  color: #007bff;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 20px 20px; /* Adjusted padding to account for fixed header */
 }
 
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.bg-gray-800 {
-  background-color: #2d2d2d;
-  padding: 24px;
+.card {
+  background-color: #333;
+  color: #fff;
   border-radius: 8px;
+  margin: 5px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.card .role {
+  color: red;
+  font-weight: 700;
+}
+
+.card .leader {
+  color: orange;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card .icons {
+  margin-top: 10px;
+}
+
+.card .icons i {
+  margin: 0 5px;
+  color: green;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.card .icons i:hover {
+  color: #007bff;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0; /* Reduced padding */
   text-align: center;
 }
 
-.bg-gray-800 img {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 16px;
-  border-radius: 50%;
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.bg-gray-800 h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
+.footer .container div {
+  margin: 10px;
+  max-width: 200px;
 }
 
-.bg-gray-800 p {
-  margin-top: 16px;
-  color: #3498db;
+.footer h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-.bg-gray-800 .flex a {
-  color: #28a745;
-  margin-right: 16px;
-}
-
-.bg-gray-700 {
-  background-color: #3c3c3c;
-  padding: 32px;
-  margin-top: 40px;
-}
-
-.bg-gray-700 h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-.bg-gray-700 p,
-.bg-gray-700 ul li {
-  color: #ffffff;
-  margin-bottom: 8px;
-}
-
-.bg-gray-700 ul li a {
-  color: #ffffff;
+.footer p,
+.footer a {
+  color: #bdc3c7;
   text-decoration: none;
+  font-size: 14px;
 }
 
-.bg-gray-700 ul li a:hover {
+.footer .newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.footer .newsletter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.footer .newsletter button:hover {
+  background-color: #2980b9;
+}
+
+.footer .social i {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.footer .social i:hover {
   color: #3498db;
-  text-decoration: underline;
 }
 
-#backToTop {
+.back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 55px;
-  height: 55px;
-  background: #f31dfb;
-  color: #000000; /* Màu vàng neon cho mũi tên */
-  font-size: 26px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 255, 171, 0.6);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-}
-
-#backToTop:hover {
-  transform: scale(1.1) rotate(360deg);
-  background: linear-gradient(135deg, #00d2ff, #00ffab);
-  color: #ff00f7; /* Màu vàng sáng hơn khi hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 171, 0.8),
-    0 0 30px rgba(20, 187, 225, 0.8);
-  border: 2px solid rgba(19, 209, 252, 0.5);
-}
-
-#backToTop.hidden {
-  display: none;
-}
-.footer {
-  background-color: #4a5861;
-  color: #ffffff;
-  padding: 40px 0;
-}
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.footer .container div {
-  flex: 1;
-  margin: 0 10px;
-}
-.footer h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.footer p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-.footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-.footer .social-icons a {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 18px;
-  color: #ffffff;
-}
-.newsletter {
-  display: flex; /* Đặt các phần tử con theo hàng ngang */
-}
-
-.newsletter input[type="email"] {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px; /* Bo tròn chỉ bên trái */
-  width: 200px;
-}
-
-.newsletter input[type="submit"] {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-left: none; /* Bỏ đường viền giữa email và nút */
-  background-color: #007bff; /* Màu nền cho nút */
-  color: white; /* Màu chữ cho nút */
-  border-radius: 0 5px 5px 0; /* Bo tròn chỉ bên phải */
-  cursor: pointer;
-}
-
-.newsletter input[type="submit"]:hover {
-  background-color: #0056b3; /* Màu nền khi hover */
-}
-.footer-bottom {
-  background-color: #3b454e;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-}
-.footer-bottom a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.footer-bottom a:hover {
-  text-decoration: underline;
-}
-#backToTop {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  width: 48px;
-  height: 48px;
-  border: 1px solid #000;
   background-color: #fff;
-  color: #0198fd;
+  color: #007bff;
+  padding: 10px 15px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, color 0.2s;
+  display: none; /* Initially hidden */
 }
 
-#backToTop:hover {
-  background-color: #3498db;
-  color: #00b6f8;
-}
-
-#backToTop.hidden {
-  display: none;
-}
-/* Container styling */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Khoảng cách giữa các biểu tượng */
-  margin: 10px 0;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: left; /* Căn giữa các biểu tượng */
-  align-items: left; /* Đảm bảo các biểu tượng thẳng hàng */
-  gap: 15px; /* Khoảng cách giữa các biểu tượng */
-}
-
-.social-icons a {
-  font-size: 24px; /* Kích thước biểu tượng */
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Hiệu ứng hover riêng cho từng logo */
-.social-icons a:hover {
-  transform: scale(1.2); /* Phóng to khi hover */
-}
-
-.social-icons a .fa-twitter:hover {
-  color: #5fd5f2; /* Màu xanh của Twitter */
-}
-
-.social-icons a .fa-facebook-f:hover {
-  color: #0876fd; /* Màu xanh của Facebook */
-}
-
-.social-icons a .fa-instagram:hover {
-  color: #e1306c; /* Màu hồng của Instagram */
-}
-
-.social-icons a .fa-skype:hover {
-  color: #16f979; /* Màu xanh của Skype */
-}
-
-.social-icons a .fa-linkedin-in:hover {
-  color: #29839a; /* Màu xanh của LinkedIn */
+.back-to-top:hover {
+  background-color: #007bff;
+  color: #fff;
 }
