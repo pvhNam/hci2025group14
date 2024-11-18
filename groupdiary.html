@@ -46,17 +46,13 @@
     <main class="container mt-5 pt-5">
       <h1 class="container mb-4">Group Diary</h1>
 
-      <!-- Tabs for Weeks -->
-      <div class="tabs d-flex justify-content-center mb-4">
-        <a onclick="showWeek(1)" class="tab-link active">Week 1</a>
-        <a onclick="showWeek(2)" class="tab-link">Week 2</a>
-        <a onclick="showWeek(3)" class="tab-link">Week 3</a>
-        <a onclick="showWeek(4)" class="tab-link">Week 4</a>
-        <a onclick="showWeek(5)" class="tab-link">Week 5</a>
-        <a onclick="showWeek(6)" class="tab-link">Week 6</a>
-        <a onclick="showWeek(7)" class="tab-link">Week 7</a>
-        <a onclick="showWeek(8)" class="tab-link">Week 8</a>
-        <a onclick="showWeek(9)" class="tab-link">Week 9</a>
+      <!-- Di chuyển giữa các week -->
+      <div class="week-navigation">
+        <button class="arrow" id="prev" disabled>&lt;</button>
+        <div class="week-display">
+          <span id="current-week">Week 1</span>
+        </div>
+        <button class="arrow" id="next">&gt;</button>
       </div>
 
       <!-- Week 1 Table -->
@@ -980,29 +976,75 @@
         }
       }
 
-      function showWeek(weekNumber) {
+      // Di chuyển giữa các nút
+      const weeks = [
+        "Week 1",
+        "Week 2",
+        "Week 3",
+        "Week 4",
+        "Week 5",
+        "Week 6",
+        "Week 7",
+        "Week 8",
+        "Week 9",
+      ];
+      let currentIndex = 0;
+
+      const currentWeekSpan = document.getElementById("current-week");
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
+
+      // Hàm để cập nhật tuần và hiển thị nội dung tương ứng
+      function updateWeek() {
+        // Cập nhật văn bản tuần hiện tại
+        currentWeekSpan.textContent = weeks[currentIndex];
+
+        // Hiển thị nội dung tuần tương ứng
         const weekContents = document.querySelectorAll(".table-container");
         weekContents.forEach((week) => {
           week.classList.add("d-none");
+          week.classList.remove("active");
         });
 
-        // Loại bỏ lớp d-none và thêm active cho tuần hiện tại
-        const currentWeek = document.getElementById(`week${weekNumber}`);
-        if (currentWeek) {
-          currentWeek.classList.remove("d-none");
-          currentWeek.classList.add("active");
+        const currentWeekContent = document.getElementById(
+          `week${currentIndex + 1}`
+        );
+        if (currentWeekContent) {
+          currentWeekContent.classList.remove("d-none");
+          currentWeekContent.classList.add("active");
         }
 
-        // Cập nhật trạng thái active của các tab
-        const tabs = document.querySelectorAll(".tabs .tab-link");
-        tabs.forEach((tab) => {
-          tab.classList.remove("active");
-        });
-        tabs[weekNumber - 1]?.classList.add("active"); // Kiểm tra nếu tồn tại tab trước khi thêm active
-
-        const percentage = getPercentageForWeek(weekNumber);
-        updateCompletionRate(percentage, weekNumber);
+        // Bật/tắt nút mũi tên
+        prevButton.disabled = currentIndex === 0;
+        nextButton.disabled = currentIndex === weeks.length - 1;
       }
+
+      // Xử lý sự kiện nút mũi tên
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateWeek();
+        }
+      });
+
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < weeks.length - 1) {
+          currentIndex++;
+          updateWeek();
+        }
+      });
+
+      // Khởi tạo trạng thái ban đầu
+      updateWeek();
+      // Cập nhật trạng thái active của các tab
+      const tabs = document.querySelectorAll(".tabs .tab-link");
+      tabs.forEach((tab) => {
+        tab.classList.remove("active");
+      });
+      tabs[weekNumber - 1]?.classList.add("active"); // Kiểm tra nếu tồn tại tab trước khi thêm active
+
+      const percentage = getPercentageForWeek(weekNumber);
+      updateCompletionRate(percentage, weekNumber);
 
       const backToTopButton = document.getElementById("backToTop");
 
