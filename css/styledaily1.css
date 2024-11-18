@@ -454,3 +454,7 @@ h1.container {
 .d-none {
   display: none !important;
 }
+/* ghi chữ bên trái */
+td.task-column {
+  text-align: left;
+}
