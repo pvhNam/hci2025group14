@@ -342,3 +342,119 @@ h1.container {
 .social-icons a .fa-linkedin-in:hover {
   color: #29839a; /* Màu xanh của LinkedIn */
 }
+
+.week-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.week-display {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.arrow:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.arrow:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+/* Tổng quan */
+.week-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Hiển thị tuần */
+.week-display {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Mũi tên */
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.arrow:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.arrow:not(:disabled):hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.arrow span {
+  pointer-events: none; /* Ngăn chặn sự kiện bên trong span */
+}
+
+/* Nội dung các tuần */
+.table-container {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.table-container.active {
+  display: block;
+}
+
+.d-none {
+  display: none !important;
+}
+/* ghi chữ bên trái */
+td.task-column {
+  text-align: left;
+}
