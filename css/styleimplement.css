@@ -438,3 +438,113 @@ body {
   background-color: #0198fd;
   color: #fff;
 }
+
+.container1 {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Danh sách các thành phần */
+.components1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+/* Thiết kế thành phần */
+.component1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.component1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tiêu đề */
+.title1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Khuyến mãi */
+.sale1 {
+  font-size: 14px;
+  color: #f50057;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sale1 i {
+  color: #f50057;
+}
+
+/* Nút bấm */
+.button1 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button1:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button1:focus {
+  outline: none;
+}
+
+/* Chi phí dự tính */
+.cost1 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+}
+
+.cost1 .cost-value {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .component1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button1 {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
