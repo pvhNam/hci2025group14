@@ -54,6 +54,11 @@ body {
   justify-content: center; /* Căn giữa các thẻ */
   gap: 35px; /* Khoảng cách giữa các thẻ */
 }
+h1 {
+  text-align: center; /* Căn giữa nội dung */
+  font-weight: bold; /* In đậm */
+  margin: 15px 0px;
+}
 
 .card {
   flex: 1 1 calc(30% - 20px); /* Tăng kích thước thẻ, mỗi thẻ chiếm 30% chiều rộng container */
