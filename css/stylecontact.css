@@ -253,13 +253,13 @@ body {
 }
 
 .contact-form form label {
-  font-size: 16px;            /* Smaller font size for subtlety */
-  font-weight: 600;           /* Slightly bold for emphasis */
-  color: var(--dark-color);   /* Use the dark color from the theme */
-  margin-bottom: 5px;         /* Add space below each label */
-  display: inline-block;      /* Ensures proper spacing with inputs */
+  font-size: 16px; /* Smaller font size for subtlety */
+  font-weight: 600; /* Slightly bold for emphasis */
+  color: var(--dark-color); /* Use the dark color from the theme */
+  margin-bottom: 5px; /* Add space below each label */
+  display: inline-block; /* Ensures proper spacing with inputs */
   text-transform: capitalize; /* Makes the first letter capitalized */
-  letter-spacing: 0.5px;      /* Adds spacing between letters */
+  letter-spacing: 0.5px; /* Adds spacing between letters */
 }
 
 .contact-form form input,

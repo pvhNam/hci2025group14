@@ -24,8 +24,8 @@ body {
 
 .header .logo h1 {
   font-size: 28px;
-  color: var(--secondary-color);
   margin: 0;
+  color: #333333;
 }
 
 .header .navbar ul {
