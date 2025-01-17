@@ -230,11 +230,11 @@ body {
 /* Contact Section */
 .contact-container {
   display: flex;
+  flex-direction: row-reverse; /* Đảo thứ tự các phần tử */
   max-width: 100%;
   margin: auto;
   background-color: var(--light-color);
   color: var(--light-color);
-
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -253,13 +253,13 @@ body {
 }
 
 .contact-form form label {
-  font-size: 16px;            /* Smaller font size for subtlety */
-  font-weight: 600;           /* Slightly bold for emphasis */
-  color: var(--dark-color);   /* Use the dark color from the theme */
-  margin-bottom: 5px;         /* Add space below each label */
-  display: inline-block;      /* Ensures proper spacing with inputs */
+  font-size: 16px; /* Smaller font size for subtlety */
+  font-weight: 600; /* Slightly bold for emphasis */
+  color: var(--dark-color); /* Use the dark color from the theme */
+  margin-bottom: 5px; /* Add space below each label */
+  display: inline-block; /* Ensures proper spacing with inputs */
   text-transform: capitalize; /* Makes the first letter capitalized */
-  letter-spacing: 0.5px;      /* Adds spacing between letters */
+  letter-spacing: 0.5px; /* Adds spacing between letters */
 }
 
 .contact-form form input,
