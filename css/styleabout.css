@@ -49,7 +49,7 @@ body {
   color: var(--primary-color);
 }
 .container {
-  display: flex; /* Kích hoạt Flexbox */
+  display: flex; /* Kích hoạt Flexboxx */
   flex-wrap: wrap; /* Cho phép các thẻ xuống hàng */
   justify-content: center; /* Căn giữa các thẻ */
   gap: 35px; /* Khoảng cách giữa các thẻ */
