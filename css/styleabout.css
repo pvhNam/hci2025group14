@@ -23,8 +23,8 @@ body {
 
 .header .logo h1 {
   font-size: 28px;
-  color: var(--secondary-color);
   margin: 0;
+  color: #333333;
 }
 
 .header .navbar ul {
@@ -49,14 +49,13 @@ body {
   color: var(--primary-color);
 }
 .container {
-  display: flex; /* Kích hoạt Flexbox */
+  display: flex; /* Kích hoạt Flexboxx */
   flex-wrap: wrap; /* Cho phép các thẻ xuống hàng */
   justify-content: center; /* Căn giữa các thẻ */
   gap: 35px; /* Khoảng cách giữa các thẻ */
 }
 h1 {
   text-align: center; /* Căn giữa nội dung */
-  font-weight: bold; /* In đậm */
   margin: 15px 0px;
 }
 
